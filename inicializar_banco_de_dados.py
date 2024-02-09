@@ -7,7 +7,7 @@ def inicializar():
     app = Flask(__name__)
     # Configurações inicias
     app.config['SECRET_KEY'] = 'segredo2030'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres.oaseiuuknhvslldaiwnr:[YOUR-PASSWORD]@aws-0-sa-east-1.pooler.supabase.com:5432/postgres'
 
     db = SQLAlchemy(app)
     db: SQLAlchemy
